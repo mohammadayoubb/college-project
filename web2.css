@@ -1,0 +1,125 @@
+
+.header{
+    min-height: 100vh;
+    min-width: 100%;
+      background-image: linear-gradient(rgba(58, 43, 43, 0.5), rgba(92, 75, 75, 0.5)),
+      url("cars.jpg");
+      background-position: center;
+      background-size: cover;
+     background-repeat: no-repeat;
+     
+  }
+  *{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+  }
+
+ 
+    nav{
+        display:flex;
+        padding:2% 6%;
+        justify-content: space-between;
+        align-items: center;
+      }
+      nav img{
+        width: 150px;
+      }
+      .nav-links{
+        flex: 1;
+        text-align: right;
+      }
+      .nav-links ul li{
+        list-style: none;
+        display: inline-block;
+        padding:8px 12px;
+        position:relative;
+      }
+      .nav-links ul li a{
+      color:white;
+      text-decoration: none;
+      font-size: 13px;
+      font-style:italic;
+      font-weight: bolder;
+      
+      }
+      .nav-links ul li::after{
+        content:'';
+        width:0%;
+        height: 2px;
+        background:#f44336;
+        display: block;
+        margin:auto;
+      transition: 0.5s;
+      }
+      .nav-links ul li:hover::after{
+        width:100%;}
+        body{
+            margin:0;
+            padding:0;
+            text-align: center;
+            width: 100vw;
+            height: 100vh;
+        }
+        /*--------form--------*/
+        .form{
+          width: 300px;
+          height:50px;
+          position:absolute
+        }
+        .contact-title{
+            margin-top: 30px;
+            color: #fff;
+            text-transform: uppercase;
+            transition: all 4s ease-in-out;
+        }
+        .contact-title h1{
+            font-size: 32px;
+            line-height: 10px;
+        }
+        .contact-title h2{
+            font-size: 16px;
+        }
+       
+        .form-control{
+          width: 600px;
+          background: transparent;
+          border:none;
+          outline: none;
+          border-bottom: 1px solid gray;
+          color: #fff;
+          font-size: 18px;
+          margin-bottom: 16px;
+          border-radius: 10px;
+          position: relative;
+        }
+        input {
+          height: 45px;
+        }
+        
+form{
+  margin-top: 50px;
+  transition: all 4s ease-in-out;
+  position: relative;
+}
+
+        
+        input::placeholder,
+        textarea::placeholder{
+            color: #fff;
+          }
+        form.submit{
+            text-decoration: none;
+            color:black;
+            border: 1px solid #fff;
+            padding: 12px 34px;
+            font-size: 13px;
+            background: transparent;  
+            cursor:pointer;
+        }
+        form .submit:hover{
+            border:1px solid rgb(255, 0, 0);
+            background:red;
+            transition: 1.5s;}
+       

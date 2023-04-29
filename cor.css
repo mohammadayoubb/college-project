@@ -1,0 +1,144 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+  }
+  nav{
+    display:flex;
+    padding:2% 6%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav img{
+    width: 100px;
+    background:transparent;
+  
+  }
+.nav-links{
+    flex: 1;
+    text-align: right;
+  }
+  .nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding:8px 12px;
+    position:relative;
+  }
+  .nav-links ul li a{
+  color:white;
+  text-decoration: none;
+  font-size: 13px;
+  font-style:italic;
+  font-weight: bolder;
+  
+  }
+  .nav-links ul li::after{
+    content:'';
+    width:0%;
+    height: 2px;
+    background:#f44336;
+    display: block; /*----- to set width and height of element-----*/         
+  transition: 0.5s;
+  }
+  .nav-links ul li:hover::after{ /*------for the effect after hovering-----*/
+    width:100%;  
+  }
+  .sub-header{
+    height:50vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),
+    url(study.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color:#fff
+  }
+  h1{
+      font-size: xx-large;
+  }
+
+  #blog-container .blogpost{
+      width: 60%;
+      margin: 0 auto;
+  }
+  #blog-container .blogpost p{
+      padding-bottom: 60px !important;/*---------overwrite---------*/
+  }
+/*-------------------------*/
+  #blog-container{
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 8vw;
+  }
+  #blog-container .blogs{
+      width: 60%;
+  }
+
+  #blog-container .blogs img{
+      width: 100%;
+      height:5in;
+      border-radius: 19px;
+  }
+  #blog-container .blogs .post{
+      padding-bottom: 60px;
+  }
+
+  #blog-container .blogs .post h3{
+      color: #29303B;
+      padding: 15px 0 10px 0;
+  }
+  #blog-container .blogs .post p{
+    color: #757373;
+    padding-bottom: 20px;
+}
+
+#blog-container .blogs .post a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: rgb(21, 21,100);
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 600;
+}
+/*-----------------------------*/
+  #blog-container .cate{
+    width: 30%;
+}
+#blog-container .cate h2{
+    padding-bottom: 7px; 
+}
+#blog-container .cate a{
+   text-decoration:none ;
+   color: #757373;
+   font-weight: 500;
+   line-height: 45px;
+    
+}
+.majors{
+  width:80%;
+  margin:auto;
+  text-align: center;
+  
+  font-size:x-large;
+
+}
+.foot{
+  font-size:x-small;
+  margin-bottom: 25px;
+ 
+}
+.foot h4{
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: small;
+}
+.icons{
+  color:blue;
+  margin: 0 13px;
+  cursor: pointer;
+  padding:10px 0;
+  font-size:medium;
+
+}

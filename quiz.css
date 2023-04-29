@@ -1,0 +1,156 @@
+*{
+  margin:0;
+  padding:0;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    display:flex;
+    padding:2% 6%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav img{
+    width: 100px;
+    background:transparent;
+  
+  }
+  .nav-links{
+    flex: 1;
+    text-align: right;
+  }
+  .nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding:8px 12px;
+    position:relative;
+  }
+  .nav-links ul li a{
+  color:white;
+  text-decoration: none;
+  font-size: 13px;
+  font-style:italic;
+  font-weight: bolder;
+  
+  }
+  .nav-links ul li::after{
+    content:'';
+    width:0%;
+    height: 2px;
+    background:#f44336;
+    display: block; /*----- to set width and height of element-----*/         
+  transition: 0.5s;
+  }
+  .nav-links ul li:hover::after{ /*------for the effect after hovering-----*/
+    width:100%;  
+  
+  } 
+  .sub-header{
+    height:50vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),
+    url(qui.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color:#fff
+  }
+
+  .cu{width:80%;
+    text-align: center;
+    margin: auto;
+  padding-top: 70px;
+  
+  }
+  .cu h1{
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .row{
+    margin-top: 5%;
+    display:flex;  /*------side by side------*/
+    justify-content:space-between; 
+  
+  }
+  .course-col{
+    flex-basis: 31%;   /*-------size of the box----*/
+
+   border-radius: 10px;
+   margin-bottom: 5%;
+   padding: 20px 12px;
+   box-sizing: border-box; /*Width and height apply to all parts of the element: content, padding and borders:*/
+   transition: 0.5s;
+  }
+  .pictures{
+    height:50vh;
+    width:100%;
+    background-image: 
+    url(java2.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color:#fff;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .pictures2{
+    height:50vh;
+    width:100%;
+    background-image: 
+    url(py2.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color:#fff;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .pictures3{
+    height:50vh;
+    width:100%;
+    background-image: 
+    url(AI2.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color:#fff;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .course-col:hover{
+    box-shadow: 0 0 20px 0px orange;
+   
+  }
+  .majors{
+    width:80%;
+    margin:auto;/*-------horizontally centers the element------*/
+    text-align: center;
+    padding-top: px;
+    font-size:x-large;
+  
+  }
+  .foot{
+    font-size:x-small;
+    margin-bottom: 25px;
+   
+  }
+  .foot h4{
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: small;
+  }
+  .icons{
+    color:blue;
+    margin: 0 13px;
+    cursor: pointer;
+    padding:10px 0;
+    font-size:medium;
+  
+  }
+  .popo{
+    font-family: 'Beau Rivage', cursive;
+font-family: 'Libre Bodoni', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+  }
